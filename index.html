@@ -54,100 +54,149 @@
 </head>
 
 <body>
-	<div class="wrap">
-		<div class="headerFix">
-			<div class="text-center">
-				<div class="topInfo" id="mainColor">
-					<div id="time">0.000</div>
-					<div class="level" style="display:none;">level <span id="score">1</span></div>
+
+	<nav class="navbar navbar-expand-lg navbar-light ">
+		<a class="navbar-brand" href="/">
+			<img class="navbar-logo" src="../assets/logo.png">
+		</a>
+		<button class="navbar-toggler dark-th" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation" style="color: rgba(0, 0, 0, 0.5);"> <span class="navbar-toggler-icon dark-th"
+				style="color: rgba(0, 0, 0, 0.5);"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item header"> <a class="nav-item nav-link dark-th" href="/blog/index.html"
+						style="color: rgba(0, 0, 0, 0.5);">Blog</a>
+				</li>
+			</ul> <span class="navbar-text">
+				<div id="theme" class="dark-th" style="color: rgba(0, 0, 0, 0.5);">
+					<div>Dark Mode</div>
+					<label class="switch">
+						<input id="theme-toggle" type="checkbox" unchecked="">
+						<span class="slider round" onclick="themeSelection()"></span>
+					</label>
 				</div>
-			</div>
+			</span>
 		</div>
-		<nav class="navbar navbar-expand-lg navbar-light ">
-			<a class="navbar-brand" href="/">
-				<img class="navbar-logo" src="../assets/logo.png">
-			</a>
-			<button class="navbar-toggler dark-th" type="button" data-toggle="collapse"
-				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation" style="color: rgba(0, 0, 0, 0.5);"> <span
-					class="navbar-toggler-icon dark-th" style="color: rgba(0, 0, 0, 0.5);"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item header"> <a class="nav-item nav-link dark-th" href="/blog/index.html"
-							style="color: rgba(0, 0, 0, 0.5);">Blog</a>
-					</li>
-				</ul> <span class="navbar-text">
-					<div id="theme" class="dark-th" style="color: rgba(0, 0, 0, 0.5);">
-						<div>Dark Mode</div>
-						<label class="switch">
-							<input id="theme-toggle" type="checkbox" unchecked="">
-							<span class="slider round" onclick="themeSelection()"></span>
-						</label>
-					</div>
-				</span>
-			</div>
-		</nav>
+	</nav>
+
+	<div class="container-fluid p-2">
 		<div class="jumbotron text-center">
-			<div class="stage" style="height: auto !important;">
-				<div class="lineWrapB">
-					<div class="adswrap">
-						<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-						<ins class="adsbygoogle" style="display:block" data-ad-format="fluid"
-							data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-1533259080190708"
-							data-ad-slot="7699856730"></ins>
-						<script>
-							(adsbygoogle = window.adsbygoogle || []).push({});
-						</script>
+
+			<div class="container h-100">
+				<div class="row h-100 justify-content-center align-items-center">
+
+
+					<div class="col-md-8">
+
+						<a href="/"><img class="logo" src="/assets/logo.png" /></a>
+
+						<h1 class="title"><a href="/"><strong>Down-to-k</strong></a></h1>
+
+						<br>
+						<strong>
+							<p class="lead">Select a game</p>
+						</strong>
+						<br>
+						<div class="row">
+
+							<div class="col-md-6 col-sm-6">
+								<a class="product-item" href="https://1to50.downtok.in">
+									<div class="card" style="width: 18rem;">
+										<img class="card-img-top" src="/assets/1to50.jpg" alt="Card image cap">
+										<div class="card-body">
+											<h5 class="card-title">1To50 Game</h5>
+											<p class="card-text">A game designed to test your speed, touch all the tiles
+												from 1
+												to
+												50 in sequence as fast as you can.</p>
+										</div>
+										<i class="fas fa-external-link-alt"></i>
+										<br>
+									</div>
+							</div>
+							</a>
+							<div class="col-md-6 col-sm-6">
+								<a class="product-item" href="https://pokedex.downtok.in">
+									<div class="card" style="width: 18rem;">
+										<img class="card-img-top" src="/assets/pokedex.png" alt="Card image cap">
+										<div class="card-body">
+											<h5 class="card-title">
+												PokéDex - Gotta know'em all</h5>
+											<p class="card-text">An encyclopedia of Pokémon or as we call it PokéDex
+												contains
+												images, Pokémon details, their abilities and stats.</p>
+										</div>
+										<i class="fas fa-external-link-alt"></i>
+										<br>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="adswrap">
+							<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+							<ins class="adsbygoogle" style="display:block" data-ad-format="fluid"
+								data-ad-layout-key="-fb+5w+4e-db+86" data-ad-client="ca-pub-1533259080190708"
+								data-ad-slot="7699856730"></ins>
+							<script>
+								(adsbygoogle = window.adsbygoogle || []).push({});
+							</script>
+
+							<div class="proposeFbLike">
+								<div class="fb-like" data-href="https://www.facebook.com/downtokgame" data-width=""
+									data-layout="button_count" data-action="like" data-size="small" data-share="true">
+								</div>
+							</div>
+
+							<div class="ads" style="width: 100%; height: auto;">
+								<script async
+									src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+								<!-- web_downtok_bottom_banner_ad -->
+								<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1533259080190708"
+									data-ad-slot="3380181545" data-ad-format="auto"
+									data-full-width-responsive="true"></ins>
+								<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+							</div>
+
+							<div class="promo">
+								<a href="https://www.downgram.in" target="_blank">
+									<img class="col-md-10" alt="downgram.in" src="../../assets/promo_downgram.png">
+								</a>
+							</div>
+
+						</div>
+
+						<div id="social" style="margin-top:50px;">
+							<h5 style="color: rgba(0, 0, 0, 0.5);">
+								spread the_ <i class="far fa-heart stats" style="color:red;"></i>
+								<pre> </pre>
+							</h5>
+							<h3>
+								<a class="social-link" target="_blank" href="https://www.facebook.com/downtokgame">
+									<i class="fab fa-facebook"></i>
+								</a>
+								<a class="social-link" target="_blank" href="https://www.instagram.com/downtok_game/">
+									<i class="fab fa-instagram"></i></a>
+								<a class="social-link" target="_blank"
+									href="https://api.whatsapp.com/send?text=Hey%21%20try%20this%20game%20now%3A%20 https://www.downtok.in">
+									<i class="fab fa-whatsapp"></i></a>
+								<a class="social-link" target="_blank"
+									href="https://twitter.com/share?hashtags=downtok.in&text=Hey%21+try+this+game+%3A"
+									;>
+									<i class="fab fa-twitter"></i></a>
+							</h3>
+
+						</div>
 
 					</div>
-					
-				<div class="proposeFbLike">
-					<div class="fb-like" data-href="https://www.facebook.com/downtokgame" data-width=""
-						data-layout="button_count" data-action="like" data-size="small" data-share="true"></div>
 				</div>
-				
-				<div class="ads" style="width: 100%; height: auto;">
-					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<!-- web_downtok_bottom_banner_ad -->
-					<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1533259080190708"
-						data-ad-slot="3380181545" data-ad-format="auto" data-full-width-responsive="true"></ins>
-					<script>
-						(adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-				</div>
-
-				<div class="promo">
-					<a href="https://www.downgram.in" target="_blank">
-						<img class="col-md-10" alt="downgram.in" src="../../assets/promo_downgram.png">
-					</a>
-				</div>
-
-			</div>
-
-			<div id="social" style="margin-top:50px;">
-				<h5 style="color: rgba(0, 0, 0, 0.5);">
-					spread the_ <i class="far fa-heart stats" style="color:red;"></i>
-					<pre> </pre>
-				</h5>
-				<h3>
-					<a class="social-link" target="_blank" href="https://www.facebook.com/downtokgame">
-						<i class="fab fa-facebook"></i>
-					</a>
-					<a class="social-link" target="_blank" href="https://www.instagram.com/downtok_game/">
-						<i class="fab fa-instagram"></i></a>
-					<a class="social-link" target="_blank"
-						href="https://api.whatsapp.com/send?text=Hey%21%20try%20this%20game%20now%3A%20 https://www.downtok.in">
-						<i class="fab fa-whatsapp"></i></a>
-					<a class="social-link" target="_blank"
-						href="https://twitter.com/share?hashtags=downtok.in&text=Hey%21+try+this+game+%3A" ;>
-						<i class="fab fa-twitter"></i></a>
-				</h3>
-
 			</div>
 		</div>
 	</div>
-
 	<footer class="footer">
 		<div class="footer-container">
 			<a class="footer-link" href="/pages/privacy-policy.html">
