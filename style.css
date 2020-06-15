@@ -1,4 +1,4 @@
-@media (max-width: 2048px) and (min-width: 1366px) {
+﻿@media (max-width: 2048px) and (min-width: 1366px) {
   .card-columns {
     padding-left: 10%;
     padding-right: 10%;
@@ -77,8 +77,6 @@ span.modal-link {
 }
 
 .overlay.jumbotron {
-  height: 600px;
-  width: 100vw;
   background: black;
   overflow: hidden;
   background: #c33764; /* fallback colour. Make sure this is just one solid colour. */
