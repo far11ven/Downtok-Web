@@ -76,6 +76,21 @@ span.modal-link {
   text-decoration: none;
 }
 
+.overlay.jumbotron {
+  height: 600px;
+  width: 100vw;
+  background: black;
+  overflow: hidden;
+  background: #c33764; /* fallback colour. Make sure this is just one solid colour. */
+  background: -webkit-linear-gradient(
+      rgba(29, 38, 113, 0.8),
+      rgba(195, 55, 100, 0.8)
+    ),
+    url();
+  background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)),
+    url(); /* The least supported option. */
+}
+
 .header {
   color: #000;
   text-decoration: none;
