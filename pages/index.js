@@ -34,7 +34,6 @@ function isvalidated(event) {
 
 function reporter() {
   $("#spinner").show();
-  console.log("formData : ", formData);
 
   let requestBody = formData;
   fetch("https://prod.downgram.in/api/issuereporter", {
@@ -48,10 +47,10 @@ function reporter() {
     .then((responseJson) => {
       if (responseJson.message === "Report sent successfully") {
         $("#issue-form").hide();
-        var formParent = document.getElementById("container");
+        var formParent = document.getElementById("msg-container");
         var newElement = document.createElement("p");
         newElement.setAttribute("id", "success-message");
-        newElement.innerHTML = `<h2> Thank you! Issue has been submitted. <i style='color:limegreen' class='far fa-check-circle'></i></h2><br>
+        newElement.innerHTML = `<h3> Thank you! <br> Your issue has been submitted. <i style='color:limegreen' class='far fa-check-circle'></i></h3><br>
           <a
               href="report-issue.html"
               target="_self"

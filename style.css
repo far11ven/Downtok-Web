@@ -332,6 +332,16 @@ div#highlight-results {
   border: 0.1rem solid #007bf4;
 }
 
+#msg-container {
+  padding: 2rem;
+}
+
+p#success-message {
+  border: 1px solid #007bff;
+  padding: 3rem;
+  margin-top: 1rem;
+}
+
 .message {
   font-size: 14px;
   font-family: Helvetica;
